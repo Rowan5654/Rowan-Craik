@@ -75,7 +75,7 @@ function App()
         <div className="grid-item" id="about" ref={section3}>
           <p className="about-title">Who am I?</p>
           <p className="about-paragraph">
-            My name is Rowan and I am a Bachelor of Computing systems graduate looking for an entry level programming opportunity as a software developer.
+            My name is Rowan and I am a Bachelor of Computing systems graduate looking for an entry level programming opportunity as a video game or front end software developer.
           </p>
           <div className="skills-div">
             <div>
