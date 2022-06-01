@@ -1,0 +1,6 @@
+.main-grid {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+
+    font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,269 @@
+/* Navigation */
+
+#navigation {
+    background-color: #FAFAFA;
+}
+
+.nav-container {
+    width: 1320px;
+    margin: auto;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-title {
+    font-weight: bold;
+    font-size: 30px;
+    color: #EB840A;
+
+    margin: 30px 0 0;
+}
+
+.nav-subtitle {
+    font-weight: bold;
+    font-size: 20px;
+    color: #303030;
+
+    margin: 0 0 32px;
+}
+
+.right-nav-item {
+    font-weight: 400;
+    font-size: 18px;
+
+    margin: 50px 20px;
+    float: right;
+}
+
+.right-nav-button {
+    margin: 38px 20px;
+}
+
+.right-nav-item p {
+    margin: 0;
+}
+
+.nav-about {
+    color: #EB840A;
+}
+
+.nav-download {
+    color: #EB840A;
+    font-size: 18px;
+
+    padding: 10px 25px;
+
+    background-color: #FAFAFA;
+    border: 2px solid #EB840A;
+    border-radius: 50px;
+}
+
+.nav-download:hover {
+    background-color: #EB840A;
+    color: #FAFAFA;
+}
+
+/* title */
+
+#title {
+    text-align: center;
+
+    background-color: #FAFAFA;
+}
+
+.main-title {
+    font-weight: bold;
+    font-size: 60px;
+    color: #EB840A;
+
+    margin: 123px 0 5px;
+}
+
+.main-subtitle {
+    font-size: 30px;
+    color: #303030;
+
+    margin: 5px 0 30px;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    margin: 30px 0 362px;
+}
+
+/* about */
+
+#about {
+    text-align: center;
+    color: #FAFAFA;
+
+    height: 440px;
+    position: relative;
+
+    background-color: #EB840A;
+
+    margin-bottom: 944px;
+}
+
+.about-title {
+    font-weight: bold;
+    font-size: 32px;
+
+    margin: 60px 0 15px;
+}
+
+.about-paragraph {
+    width: 800px;
+    margin: 15px auto 0;
+
+    font-size: 20px;
+}
+
+/* skills */
+
+.skills-div {
+    width: 1320px;
+    height: 1050px;
+    position: absolute;
+    top: 250px;
+    left: 0; 
+    right: 0; 
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: auto auto;
+
+    background-color: #FAFAFA;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skills-icon {
+    margin: 60px 0 25px;
+}
+
+.skills-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #303030;
+
+    margin: 25px 0 15px;
+}
+
+.skills-subtitle {
+    font-size: 20px;
+    color: #303030;
+    line-height: 35px;
+
+    width: 500px;
+    margin: 15px auto 50px;
+}
+
+.skills-section-title {
+    font-size: 25px;
+    color: #EB840A;
+
+    margin-bottom: 30px;
+}
+
+/* qualifications */
+
+.qualifications-title {
+    font-weight: bold;
+    font-size: 40px;
+    color: #303030;
+    text-align: center;
+
+    margin: 0;
+}
+
+.qualifications-grid {
+    display: grid;
+    grid-template-columns: 648px 648px;
+    column-gap: 24px;
+    grid-template-rows: 368px 368px;
+    row-gap: 45px;
+    width: 1320px;
+    height: 888px;
+
+    margin: 60px auto 37px;
+
+    text-align: center;
+}
+
+/* My Work */
+
+.my-work-title {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.showcase-buttons-div {
+    width: 380px;
+    margin: 30px auto;
+}
+
+.showcase-button {
+    height: 33px;
+
+    font-size: 18px;
+
+    padding: 6px 12px;
+    margin: 0 20px;
+
+    border: none;
+    background-color: white;
+}
+
+.active-showcase-button {
+    color: #FAFAFA;
+    background-color: #EB840A;
+}
+
+#unreal-button {
+    width: 180px;
+    margin-left: 0;
+}
+
+#blender-button {
+    width: 148px;
+    margin-right: 0;
+}
+
+/* footer */
+
+#footer {
+    background-color: #EB840A;
+    text-align: center;
+
+    padding: 108px;
+}
+
+.white-circle {
+    width: 80px;
+    height: 80px;
+
+    margin: auto;
+}
+
+.footer-message {
+    font-size: 30px;
+    color: #FAFAFA;
+
+    width: 437px;
+    margin: 60px auto;
+}
+
+.footer-link {
+    width: 45px;
+    height: 45px;
+    
+    margin: 0 15px;
+}

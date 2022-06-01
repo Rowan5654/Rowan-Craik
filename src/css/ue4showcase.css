@@ -1,0 +1,40 @@
+.ue-showcase-grid {
+    display: grid;
+    grid-template-rows: 345px 345px 345px 345px 345px;
+    row-gap: 50px;
+
+    width: 1320px;
+    height: 2136px;
+
+    margin: 0 auto 400px;
+}
+
+
+.ue-showcase-grid-item {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 24px;
+}
+
+.ue-showcase-grid-info {
+    background-color: #FAFAFA;
+    
+    padding: 0 50px;
+
+    text-align: center;
+}
+
+.ue-showcase-grid-video {
+    background-color: #303030;
+    padding: 25px 10px;
+}
+
+.project-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #EB9A39;
+}
+
+.project-paragraph {
+    font-size: 18px;
+}
