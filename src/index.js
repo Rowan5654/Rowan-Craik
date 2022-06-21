@@ -12,6 +12,7 @@ import missionReadyLogo from "./images/qualifications/Mission Ready logo.png"
 import eitLogo from "./images/qualifications/EIT logo.jpg"
 import udemyLogo from "./images/qualifications/Udemy Logo.png"
 import hfuLogo from "./images/qualifications/HFU logo.jpg"
+import gameDevLogo from "./images/qualifications/GameDevLogo.jpg"
 
 import whiteCircle from "./images/footer/White Circle.png"
 import githubLogo from "./images/footer/Github logo.png"
@@ -22,11 +23,13 @@ import Qualification from "./components/qualification.js"
 
 import UnrealShowcase from "./components/UE4showcase.js"
 import BlenderShowcase from "./components/3DblenderShowcase.js"
+import ThrillCapitalShowcase from "./components/ThrillCapitalShowcase.js";
 // downloads
 import CV from "./downloads/Rowan Craik CV.pdf"
 import Transcript from "./downloads/Transcript of Records.pdf"
 import HFUCertificate from "./downloads/Furtwangen Participation Certificate.pdf"
 import UdemyCertificate from "./downloads/Udemy Certificate.PNG"
+import BlenderBeginnerCertificate from "./downloads/GameDevTVBlenderCertificate.pdf"
 
 function App()
 {
@@ -40,9 +43,11 @@ function App()
   function UpdateShowcase(component, activeButton) {
     const unrealButton = document.getElementById("unreal-button");
     const blenderButton = document.getElementById("blender-button");
+    const thrillCapitalButton = document.getElementById("thrill-capital-button")
 
     unrealButton.classList = (activeButton == "unreal") ? "showcase-button active-showcase-button" : "showcase-button";
     blenderButton.classList = (activeButton == "blender") ? "showcase-button active-showcase-button" : "showcase-button";
+    thrillCapitalButton.classList = (activeButton == "thrill-capital") ? "showcase-button active-showcase-button" : "showcase-button";
 
     setShowcase(component)
   }
@@ -84,10 +89,10 @@ function App()
               <p className="skills-subtitle">My biggest passion is video games. I enjoy playing video games, creating video games, and enriching myself in video game culture. So much so that I have dedicated a large amount of my time towards learning various softwares that are used to make video games.</p>
               <p className="skills-section-title">Softwares</p>
               {Proficiency("Unreal Engine", 4)}
-              {Proficiency("Unity", 2)}
-              {Proficiency("Blender", 3)}
-              {Proficiency("Visual Studio Code", 4)}
-              {Proficiency("Github", 2)}
+              {Proficiency("Unity", 3)}
+              {Proficiency("Blender", 5)}
+              {Proficiency("Visual Studio Code", 5)}
+              {Proficiency("Github", 4)}
             </div>
             <div>
               <img className="skills-icon" src={frontEnd} />
@@ -110,7 +115,8 @@ function App()
           <p className="qualifications-title">Qualifications</p>
           <div className="qualifications-grid">
             <div id="mission-ready-qualification">
-              {Qualification(missionReadyLogo, "Digital Technology Product Solutions", "MISSION READY", "FEB 2022 - APR 2022", 251)}
+              {Qualification(missionReadyLogo, "Certificate in Software Development (AI & Cloud)", "MISSION READY", "FEB 2022 - APR 2022", 350)}
+              <a href="https://www.credential.net/92ad771d-e7c9-4927-97bb-a776766c6521#gs.3jteix"><button className="qualification-button">CERTIFICATE</button></a>
             </div>
             <div id="eit-qualification">
               {Qualification(eitLogo, "Bachelor of Computing Systems", "EASTERN INSTITUTE OF TECHNOLOGY", "2018 - 2021", 278)}
@@ -124,13 +130,18 @@ function App()
               {Qualification(hfuLogo, "Student Exchange Programme in Germany", "HOCHSCHULE FURTWANGEN UNIVERSITY", "2020 - 2021", 410)}
               <a href={HFUCertificate} download><button className="qualification-button">CERTIFICATE</button></a>
             </div>
+            <div id="hfu-qualification">
+              {Qualification(gameDevLogo, "Blender Creator 2.8: Learn 3D Modelling for Beginners", "GameDev.tv", "FEB 2022 - JUN 2022", 400)}
+              <a href={BlenderBeginnerCertificate} download><button className="qualification-button">CERTIFICATE</button></a>
+            </div>
           </div>
         </div>
         <div className="grid-item" id="my-work" ref={section5}>
-          <p className="my-work-title">My Work</p>
+          <p className="my-work-title">Experience</p>
           <div className="showcase-buttons-div">
             <button className="showcase-button active-showcase-button" id="unreal-button" onClick={() => UpdateShowcase(<UnrealShowcase/>, "unreal")}>UNREAL ENGINE</button>
             <button className="showcase-button" id="blender-button" onClick={() => UpdateShowcase(<BlenderShowcase/>, "blender")}>3D BLENDER</button>
+            <button className="showcase-button" id="thrill-capital-button" onClick={() => UpdateShowcase(<ThrillCapitalShowcase/>, "thrill-capital")}>THRILL CAPITAL</button>
           </div>
           <div>
             {showcase}

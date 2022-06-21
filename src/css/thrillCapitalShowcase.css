@@ -1,0 +1,46 @@
+.thrill-capital-showcase-grid {
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 25px;
+
+    width: 1320px;
+    margin: 0 auto 200px;
+
+    text-align: center;
+}
+
+.thrill-capital-showcase-grid-item {
+    width: 1320px;
+    background-color: #FAFAFA;
+}
+
+.thrill-capital-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #EB9A39;
+}
+
+.thrill-capital-paragraph {
+    width: 75%;
+    margin: auto;
+    font-size: 18px;
+}
+
+#intro {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+#screenshots {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 25px;
+    column-gap: 25px;
+}
+
+.thrill-capital-showcase-image {
+    height: 372px;
+    width: 648px;
+}
+

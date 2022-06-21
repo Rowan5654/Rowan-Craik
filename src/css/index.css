@@ -187,10 +187,10 @@
     display: grid;
     grid-template-columns: 648px 648px;
     column-gap: 24px;
-    grid-template-rows: 368px 368px;
+    grid-template-rows: 368px 368px 369px;
     row-gap: 45px;
     width: 1320px;
-    height: 888px;
+    height: 1256px;
 
     margin: 60px auto 37px;
 
@@ -206,17 +206,18 @@
 }
 
 .showcase-buttons-div {
-    width: 380px;
+    width: 600px;
     margin: 30px auto;
 }
 
 .showcase-button {
     height: 33px;
+    width: 180px;
 
     font-size: 18px;
 
     padding: 6px 12px;
-    margin: 0 20px;
+    margin: 0 10px;
 
     border: none;
     background-color: white;
@@ -225,16 +226,6 @@
 .active-showcase-button {
     color: #FAFAFA;
     background-color: #EB840A;
-}
-
-#unreal-button {
-    width: 180px;
-    margin-left: 0;
-}
-
-#blender-button {
-    width: 148px;
-    margin-right: 0;
 }
 
 /* footer */

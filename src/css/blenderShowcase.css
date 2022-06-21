@@ -2,18 +2,17 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto auto auto auto auto;
-    column-gap: 24px;
-    row-gap: 16px;
+    row-gap: 25px;
+    column-gap: 25px;
 
     width: 1320px;
-    height: 3136px;
 
-    margin: 0 auto 180px;
+    margin: 0 auto 200px;
 }
 
 .blender-showcase-grid-item {
     height: 372px;
-    width: 648px;
+    width: 635px;
 }
 
 .showcase-image {
