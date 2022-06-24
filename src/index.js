@@ -30,6 +30,7 @@ import Transcript from "./downloads/Transcript of Records.pdf"
 import HFUCertificate from "./downloads/Furtwangen Participation Certificate.pdf"
 import UdemyCertificate from "./downloads/Udemy Certificate.PNG"
 import BlenderBeginnerCertificate from "./downloads/GameDevTVBlenderCertificate.pdf"
+import GitHubCertificate from "./downloads/GameDevTVGithubCertificate.pdf"
 
 function App()
 {
@@ -133,6 +134,10 @@ function App()
             <div id="hfu-qualification">
               {Qualification(gameDevLogo, "Blender Creator 2.8: Learn 3D Modelling for Beginners", "GameDev.tv", "FEB 2022 - JUN 2022", 400)}
               <a href={BlenderBeginnerCertificate} download><button className="qualification-button">CERTIFICATE</button></a>
+            </div>
+            <div id="hfu-qualification">
+              {Qualification(gameDevLogo, "Get Git Smart Course: Learn Git in Unity, SourceTree, GitHub", "GameDev.tv", "JUN 2022 - JUN 2022", 450)}
+              <a href={GitHubCertificate} download><button className="qualification-button">CERTIFICATE</button></a>
             </div>
           </div>
         </div>
