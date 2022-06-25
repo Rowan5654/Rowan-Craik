@@ -31,6 +31,7 @@ import HFUCertificate from "./downloads/Furtwangen Participation Certificate.pdf
 import UdemyCertificate from "./downloads/Udemy Certificate.PNG"
 import BlenderBeginnerCertificate from "./downloads/GameDevTVBlenderCertificate.pdf"
 import GitHubCertificate from "./downloads/GameDevTVGithubCertificate.pdf"
+import BlenderCharacterCertificate from "./downloads/GameDevTVBlenderCharacterCertificate.pdf"
 
 function App()
 {
@@ -131,13 +132,17 @@ function App()
               {Qualification(hfuLogo, "Student Exchange Programme in Germany", "HOCHSCHULE FURTWANGEN UNIVERSITY", "2020 - 2021", 410)}
               <a href={HFUCertificate} download><button className="qualification-button">CERTIFICATE</button></a>
             </div>
-            <div id="hfu-qualification">
+            <div id="gamedev-qualification">
               {Qualification(gameDevLogo, "Blender Creator 2.8: Learn 3D Modelling for Beginners", "GameDev.tv", "FEB 2022 - JUN 2022", 400)}
               <a href={BlenderBeginnerCertificate} download><button className="qualification-button">CERTIFICATE</button></a>
             </div>
-            <div id="hfu-qualification">
+            <div id="gamedev-qualification">
               {Qualification(gameDevLogo, "Get Git Smart Course: Learn Git in Unity, SourceTree, GitHub", "GameDev.tv", "JUN 2022 - JUN 2022", 450)}
               <a href={GitHubCertificate} download><button className="qualification-button">CERTIFICATE</button></a>
+            </div>
+            <div id="gamedev-qualification">
+              {Qualification(gameDevLogo, "Blender Character Creator x2.0 for Video Games Design Course", "GameDev.tv", "JUN 2022 - JUN 2022", 450)}
+              <a href={BlenderCharacterCertificate} download><button className="qualification-button">CERTIFICATE</button></a>
             </div>
           </div>
         </div>
