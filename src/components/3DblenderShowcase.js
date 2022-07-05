@@ -17,10 +17,11 @@ import roadBarricade from "../images/blender/RoadBarricade.png"
 import roadblockLarge from "../images/blender/RoadBlockLarge.png"
 import roadblockSmall from "../images/blender/RoadblockSmall.png"
 import safeDoor from "../images/blender/Safe Door.png"
-import safe from "../images/blender/Safe.png"
-import temple from "../images/blender/Temple.png"
+import ogre from "../images/blender/Ogre.png"
+import modularVehicles from "../images/blender/modular vehicles.png"
 
-const images = [bowling, chess, cone, crystal, water, hallway, lamp, fence, poolrooms, poolrooms2, roadBarricade, roadblockLarge, roadblockSmall, safeDoor, safe, temple];
+
+const images = [ogre, bowling, chess, lamp, poolrooms, poolrooms2, cone, crystal, water, hallway, modularVehicles, fence,  roadBarricade, roadblockLarge, roadblockSmall, safeDoor];
 
 function BlenderShowcase() {
     return (
