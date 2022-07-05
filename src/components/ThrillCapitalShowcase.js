@@ -23,7 +23,7 @@ function ThrillCapitalShowcase() {
                     <p className="thrill-capital-paragraph">During the first half of 2022, I participated in an internship with Thrill Capital, working with 3D point cloud geographic lidar data to create a 3D simulated enviroment within the unity game engine.
                         <br></br>
                         <br></br>
-                        The idea behind the project was to create a "serious game" driver distration tool, which would place the user onto a terrain built to simulate a neighbourhood in real life Utar, America and have them drive a digital twin vehicle of a formula one racecar, known as the 424 hypercar. 
+                        The idea behind the project was to create a "serious game" driver distraction tool, which would place the user onto a terrain built to simulate a neighbourhood in real life Utar, America and have them drive a digital twin vehicle of a formula one racecar, known as the 424 hypercar. 
                     </p>
                 </div>
                 <div className="screenshots">
