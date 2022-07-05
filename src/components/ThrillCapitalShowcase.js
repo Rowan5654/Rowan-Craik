@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import Lightbox from "./ShowcaseLightbox.js"
 
 import "../css/thrillCapitalShowcase.css"
 import "../css/galleryModal.css"
@@ -12,7 +12,7 @@ import openTopography from "../images/thrill capital/open topography.png"
 import projectFinal from "../images/thrill capital/project final.png"
 import terrainStamp from "../images/thrill capital/terrain stamp.png"
 
-const thrillImages = [openTopography, cloudCompare, terrainStamp, fullBlender, housesOriginal, housesFinal, projectFinal, car];
+const images = [openTopography, cloudCompare, terrainStamp, fullBlender, housesOriginal, housesFinal, projectFinal, car];
 
 function ThrillCapitalShowcase() {
     return(
@@ -26,71 +26,12 @@ function ThrillCapitalShowcase() {
                         The idea behind the project was to create a "serious game" driver distration tool, which would place the user onto a terrain built to simulate a neighbourhood in real life Utar, America and have them drive a digital twin vehicle of a formula one racecar, known as the 424 hypercar. 
                     </p>
                 </div>
-                <Lightbox />
+                <div className="screenshots">
+                    <Lightbox lightboxImages={images}/>
+                </div>
             </div>
         </>
     )
-}
-
-function Lightbox() {
-    const [imageToShow, setImageToShow] = useState("");
-    const [lightboxDisplay, setLightBoxDisplay] = useState(false);
-
-    const imageCards = thrillImages.map((image) => (
-        <img className="thrill-capital-showcase-image" src={image} onClick={() => showImage(image)} />
-    ));
-
-    const showImage = (image) => {
-        setImageToShow(image);
-        setLightBoxDisplay(true);
-    };
-
-    const hideLightBox = () => {
-        setLightBoxDisplay(false);
-    };
-
-    const showNext = (e) => {
-        e.stopPropagation();
-        let currentIndex = thrillImages.indexOf(imageToShow);
-        if (currentIndex >= 7) {
-            setImageToShow(thrillImages[0]);
-        }
-        else {
-            let nextImage = thrillImages[currentIndex + 1];
-            setImageToShow(nextImage);
-        }
-    };
-
-    const showPrev = (e) => {
-        e.stopPropagation();
-        let currentIndex = thrillImages.indexOf(imageToShow);
-        if (currentIndex <= 0) {
-            setImageToShow(thrillImages[7]);
-        }
-        else {
-            let prevImage = thrillImages[currentIndex - 1];
-            setImageToShow(prevImage);
-        }
-    };
-
-    return (
-        <>
-            <div className="thrill-capital-showcase-grid-item" id="screenshots">
-                {imageCards}
-            </div>
-            
-
-            {
-                lightboxDisplay ?
-                <div id="lightbox" onClick={hideLightBox}>
-                    <button className="lightbox-button" onClick={showPrev}>⭠</button>
-                    <img id="lightbox-img" src={imageToShow} />
-                    <button className="lightbox-button" onClick={showNext}>⭢</button>
-                </div>
-                : ""
-            }
-        </>
-    );
 }
 
 export default ThrillCapitalShowcase;

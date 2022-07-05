@@ -22,15 +22,18 @@ function GenerateProficiencyImages(score) {
     );
 }
 
-function Proficiency(title, score) {
-    
-    
-    
+function Proficiency(logo, title, score, languageProficiency) {
+
     return(
         <>
-            <div className="proficiencies-div">
+            <div className={(languageProficiency) ? "proficiencies-div proficiency-language" : "proficiencies-div"} id="proficiency-div-item">
                 <div>
-                    <p className="proficiencies-title">{title}</p>
+                    <img className="proficiency-logo" src={logo} />
+                </div>
+                <div>
+                    {(languageProficiency) ? 
+                    <p style={{padding: "0 30px"}} className="proficiencies-title">{title}</p> :
+                    <p style={{padding: "0 20px"}} className="proficiencies-title">{title}</p>}
                 </div>
                 <div>
                     {GenerateProficiencyImages(score)}

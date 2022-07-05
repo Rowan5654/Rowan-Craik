@@ -8,6 +8,21 @@ import profilePicture from "./images/Profile Picture.jpg"
 import controllerIcon from "./images/skills/controller-icon.png"
 import frontEnd from "./images/skills/front-end-icon.png"
 
+import unrealEngineLogo from "./images/skills/logos/UnrealEngineLogo.png"
+import unityLogo from "./images/skills/logos/UnityLogo.png"
+import blenderEngineLogo from "./images/skills/logos/BlenderLogo.png"
+import visualStudioCodeLogo from "./images/skills/logos/VisualStudioCodeLogo.png"
+import githubProficiencyLogo from "./images/skills/logos/GithubLogo.png"
+import htmlLogo from "./images/skills/logos/HTMLLogo.png"
+import cssLogo from "./images/skills/logos/CSSLogo.png"
+import javascriptLogo from "./images/skills/logos/JavascriptLogo.png"
+import cppLogo from "./images/skills/logos/C++Logo.png"
+import pythonLogo from "./images/skills/logos/PythonLogo.png"
+import javaLogo from "./images/skills/logos/JavaLogo.png"
+import csLogo from "./images/skills/logos/CSharpLogo.png"
+import nodejsLogo from "./images/skills/logos/NodeJSLogo.png"
+import reactLogo from "./images/skills/logos/ReactLogo.png"
+
 import missionReadyLogo from "./images/qualifications/Mission Ready logo.png"
 import eitLogo from "./images/qualifications/EIT logo.jpg"
 import udemyLogo from "./images/qualifications/Udemy Logo.png"
@@ -35,17 +50,17 @@ import BlenderCharacterCertificate from "./downloads/GameDevTVBlenderCharacterCe
 
 function App()
 {
-  const section5 = useRef(null)
-  const scrollToSection5 = () => section5.current.scrollIntoView({behavior: 'smooth'})
-  const section3 = useRef(null)
-  const scrollToSection3 = () => section3.current.scrollIntoView({behavior: 'smooth'})
+  const section5 = useRef(null);
+  const scrollToSection5 = () => section5.current.scrollIntoView({behavior: 'smooth'});
+  const section3 = useRef(null);
+  const scrollToSection3 = () => section3.current.scrollIntoView({behavior: 'smooth'});
 
   const [showcase, setShowcase] = useState(<UnrealShowcase/>);
 
   function UpdateShowcase(component, activeButton) {
     const unrealButton = document.getElementById("unreal-button");
     const blenderButton = document.getElementById("blender-button");
-    const thrillCapitalButton = document.getElementById("thrill-capital-button")
+    const thrillCapitalButton = document.getElementById("thrill-capital-button");
 
     unrealButton.classList = (activeButton == "unreal") ? "showcase-button active-showcase-button" : "showcase-button";
     blenderButton.classList = (activeButton == "blender") ? "showcase-button active-showcase-button" : "showcase-button";
@@ -90,26 +105,26 @@ function App()
               <p className="skills-title">Video game Development</p>
               <p className="skills-subtitle">My biggest passion is video games. I enjoy playing video games, creating video games, and enriching myself in video game culture. So much so that I have dedicated a large amount of my time towards learning various softwares that are used to make video games.</p>
               <p className="skills-section-title">Softwares</p>
-              {Proficiency("Unreal Engine", 4)}
-              {Proficiency("Unity", 3)}
-              {Proficiency("Blender", 5)}
-              {Proficiency("Visual Studio Code", 5)}
-              {Proficiency("Github", 4)}
+              {Proficiency(unrealEngineLogo, "Unreal Engine", 4, false)}
+              {Proficiency(unityLogo, "Unity", 3, false)}
+              {Proficiency(blenderEngineLogo, "Blender", 5, false)}
+              {Proficiency(visualStudioCodeLogo, "Visual Studio Code", 5, false)}
+              {Proficiency(githubProficiencyLogo, "Github", 4, false)}
             </div>
             <div>
               <img className="skills-icon" src={frontEnd} />
               <p className="skills-title">Programming</p>
               <p className="skills-subtitle">I've learned various programming languages which make use of my critical thinking and problem solving skills. I enjoy constantly learning new things and facing challenges which require using my mind. Programming allows me to acomplish this on a daily basis.</p>
               <p className="skills-section-title">Languages</p>
-              {Proficiency("HTML", 5)}
-              {Proficiency("CSS", 5)}
-              {Proficiency("Javascript", 5)}
-              {Proficiency("C++", 4)}
-              {Proficiency("Python", 3)}
-              {Proficiency("Java", 1)}
-              {Proficiency("C#", 4)}
-              {Proficiency("Node.js", 2)}
-              {Proficiency("React", 5)}
+              {Proficiency(htmlLogo, "HTML", 5, true)}
+              {Proficiency(cssLogo, "CSS", 5, true)}
+              {Proficiency(javascriptLogo, "Javascript", 5, true)}
+              {Proficiency(cppLogo, "C++", 4, true)}
+              {Proficiency(pythonLogo, "Python", 3, true)}
+              {Proficiency(javaLogo, "Java", 1, true)}
+              {Proficiency(csLogo, "C#", 4, true)}
+              {Proficiency(nodejsLogo, "Node.js", 2, true)}
+              {Proficiency(reactLogo, "React", 5, true)}
             </div>
           </div>
         </div>

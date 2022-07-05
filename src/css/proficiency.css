@@ -1,8 +1,19 @@
 .proficiencies-div {
     display: grid;
-    grid-template-columns: auto 260px;
-    width: 446px;
+    grid-template-columns: 32px auto 260px;
+    width: 500px;
     margin: 20px auto;
+}
+
+.proficiency-language {
+    width: 450px;
+}
+
+.proficiency-logo {
+    width: 32px;
+    height: 32px;
+
+    float: left;
 }
 
 .proficiencies-title {
@@ -11,7 +22,7 @@
     color: black;
 
     float: left;
-
+    
     margin: 4.5px 0 4.5px;
 }
 
