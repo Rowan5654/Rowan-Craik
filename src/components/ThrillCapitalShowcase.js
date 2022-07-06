@@ -1,7 +1,6 @@
 import Lightbox from "./ShowcaseLightbox.js"
 
 import "../css/thrillCapitalShowcase.css"
-import "../css/galleryModal.css"
 
 import car from "../images/thrill capital/424car.png"
 import cloudCompare from "../images/thrill capital/cloud compare.png"

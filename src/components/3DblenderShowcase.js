@@ -1,7 +1,6 @@
 import Lightbox from "./ShowcaseLightbox.js"
 
 import "../css/blenderShowcase.css"
-import "../css/galleryModal.css"
 
 import bowling from "../images/blender/Bowling.png"
 import chess from "../images/blender/Chess White.png"
